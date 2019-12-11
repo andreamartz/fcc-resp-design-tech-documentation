@@ -15,6 +15,11 @@ html {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 815px) {
+  #navbar {
+    height: 25%;
+  }
+}
 /* Styles by section: */
 
 
