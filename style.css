@@ -6,8 +6,14 @@ html {
 /* Styles for page elements */
 
 
-/* Styles by section: */
+/* Styles by section: Navigation*/
+.nav-ul {
+  list-style: none;
+}
 
+.nav-link {
+  text-decoration: none;
+}
 
 /* Styles by section: */
 
