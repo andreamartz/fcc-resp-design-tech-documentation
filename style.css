@@ -1,8 +1,11 @@
 /* Global Styles */
 html {
-  font-family: Arial, "sans serif;"
+  font-family: Arial, "sans serif";
 }
 
+a {
+  color: inherit;
+}
 /* Styles for page elements */
 
 
@@ -11,13 +14,18 @@ html {
   list-style: none;
 }
 
+.nav-ul li {
+  padding: .75rem;
+}
+
 .nav-link {
   text-decoration: none;
 }
 
 @media only screen and (max-width: 815px) {
-  #navbar {
-    height: 25%;
+  #navbar ul {
+    height: 25vh;
+    overflow: scroll;
   }
 }
 /* Styles by section: */
