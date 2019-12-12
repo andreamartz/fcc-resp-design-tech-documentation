@@ -74,36 +74,80 @@
         </ul>
         If you have this knowledge, let’s get to it!
       </p>
-
-      <p></p>
+      <p>It is recommended that you open a code editor and try to create this modal step-by-step with me. Even better, try to add
+      to the code or change it to make it your own.v</p>
     </section>
     <section id="planning_for_the_modal" class="main-section">
       <header>
         <h2>Planning for the modal</h2>
       </header>
-      <p></p>
-      <p></p>
+      <p>As is always the case in web development, before you begin coding, you should think about the specific behavior you
+      desire for your modal in terms of what is right for your audience (the user). Specifically, answer the following
+      questions:
+        <ol>
+          <li><em>What event will trigger the display of the modal?</em> That is, when do you want the modal to appear? Will it be when the
+          user clicks or hovers over an element on the page? Will it happen a few seconds after the page has loaded?</li>
+          <li><em>What event will trigger the disappearance of the modal?</em>Will it be when the user clicks a close button on the modal? Or by clicking anywhere on the backdrop?</li>
+          <li><em>What transitions, if any, will the modal have as it enters onto the page?</em>That is, will it bounce a little? Will it slide onto the page? Something else?</li>
+        </ol>
+      </p>
     </section>
     <section id="the_goal" class="main-section">
       <header>
         <h2>The goal</h2>
       </header>
-      <p></p>
-      <p></p>
+      <p>In this article, I will show you how to create a very basic modal with no transitions as it comes onto the page. You can
+      always add the fancy features later. It will be activated by clicking on a specific image on the page. The act of the
+      user clicking on the image is called an event in JS. As a bonus, I will also show you how to make a modal pop up after a
+      slight delay when the page loads.</p>
     </section>
     <section id="the_code" class="main-section">
       <header>
         <h2>The code</h2>
       </header>
-      <p></p>
-      <p></p>
+      <p>The modal we’ll create will be the one that appears in the header image of this article. The code will make more sense
+      if you understand first how the modal is constructed. You can think of it as having three layers. The bottom layer is
+      the image of the mountains. When the page loads, this image without the modal is all you’ll see:
+        <p style="text-align:center">
+          <img style="width:85%" src="img/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg"
+            alt="photo of mountain scenery">
+        </p>
+      </p>
+      <p>On top of that is the dark backdrop. The topmost layer is the text in the white box.</p>
+      
+      <p>The code will consist of one of each of these file types: HTML, CSS, and JS. Now we’ll get into what you came here
+        for:
+        the code.
+      </p>
     </section>
     <section id="html" class="main-section">
       <header>
         <h2>HTML</h2>
       </header>
-      <p></p>
-      <p></p>
+      <p>The HTML <code style="font-family:Courier New">&ltbody&gt</code> looks like this:</p>
+      
+      <p style="text-align:center">
+        <img style="width:85%" src="img/martz-post2-modals/modal-html.png" alt="">
+      </p>
+      
+      <p>Notice that the very last element in the <code style="font-family:Courier New">&ltbody&gt</code> is
+        the
+        <code style="font-family:Courier New">&ltscript&gt</code> tag for the JS file. It's important to not
+        put
+        this in the <code style="font-family:Courier New">&lthead&gt</code>.</p>
+      
+      <p>Also, you'll see that there is an empty <code style="font-family:Courier New">&ltdiv&gt</code> with
+        <code style="font-family:Courier New">class=”backdrop”</code> that will serve as our backdrop,
+        which is the darkened overlay that will appear to be under the modal. There is also a
+        <code style="font-family:Courier New">&ltdiv&gt</code> which will serve as our modal with
+        <code style="font-family:Courier New">class=”modal”</code>, that contains some text. Within the
+        <code style="font-family:Courier New">&ltmain&gt</code> tag, there is a
+        <code style="font-family:Courier New">&ltdiv&gt</code> containing the image we will click on to
+        activate,
+        or “turn on” the modal.</p>
+      
+      <p style="background-color:#eeeeef;border:1px solid #000;padding:5px">Note: These class names are up to you to choose.
+        They should be different from each other, and they should make sense to you.</p>
     </section>
     <section id="css" class="main-section">
       <header>
